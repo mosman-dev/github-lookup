@@ -13,7 +13,6 @@ import {
 let githubClientId;
 let githubClientSecret;
 
-// [MAKE SURE TO CLARIFY]
 if (process.env.NODE_ENV !== 'production') {
 	githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
 	githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
@@ -32,7 +31,6 @@ const GithubState = (props) => {
 
 	const [state, dispatch] = useReducer(GithubReducer, initialState);
 
-	// SEARCH USERS
 	const searchUsers = async (text) => {
 		setLoading();
 		const res = await axios.get(
@@ -45,7 +43,6 @@ const GithubState = (props) => {
 		});
 	};
 
-	// GET USER
 	const getUser = async (username) => {
 		setLoading();
 
@@ -59,7 +56,6 @@ const GithubState = (props) => {
 		});
 	};
 
-	// GET REPOS
 	const getUserRepos = async (username) => {
 		setLoading();
 
@@ -73,10 +69,8 @@ const GithubState = (props) => {
 		});
 	};
 
-	// CLEAR USERS
 	const clearUsers = () => dispatch({ type: CLEAR_USERS });
 
-	// SET LOADING
 	const setLoading = () => dispatch({ type: SET_LOADING });
 
 	return (
