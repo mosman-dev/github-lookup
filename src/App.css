@@ -356,7 +356,6 @@ input {
 input::placeholder {
 	font-size: 0.9rem;
 	position: relative;
-	transform: translateY(-10%);
 }
 
 .form-text {
