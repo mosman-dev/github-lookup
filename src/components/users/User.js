@@ -35,7 +35,7 @@ const User = ({ match }) => {
 
 	return (
 		<Fragment>
-			<div class='py-1'>
+			<div className='py-1'>
 				<Link to='/' className='btn btn-light'>
 					Back to Search
 				</Link>
@@ -100,7 +100,7 @@ const User = ({ match }) => {
 				<div className='badge badge-light'>Public Repos: {public_repos}</div>
 				<div className='badge badge-dark'>Public Gists: {public_gists}</div>
 			</div>
-			<div class='p-1'>
+			<div className='p-1'>
 				<p>
 					<strong>Repository Samples</strong>
 				</p>

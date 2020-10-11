@@ -279,6 +279,12 @@ img {
 	width: 100px;
 }
 
+.btn-light-special {
+	background: var(--light-color);
+	color: #000;
+	width: 100px;
+}
+
 .btn-danger,
 .bg-danger,
 .badge-danger,
@@ -320,6 +326,12 @@ img {
 	border-radius: 50%;
 }
 
+.btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* User Style */
 .user-style {
 	display: grid;
@@ -351,14 +363,8 @@ input::placeholder {
 	color: #888;
 }
 
-.clear {
-	display: flex;
-	align-items: center;
-}
-
-.clear button {
-	width: 70px;
-	height: 38px;
+.form button {
+	height: fit-content;
 }
 
 input[type='text'],
@@ -461,5 +467,13 @@ table th {
 	/* User Style */
 	.user-style {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* Form */
+	.form {
+		flex-direction: column;
+	}
+	.form input[type='text'] {
+		margin: 0;
 	}
 }

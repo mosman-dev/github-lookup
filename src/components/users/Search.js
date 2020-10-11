@@ -31,21 +31,21 @@ const Search = () => {
 					value={text}
 					onChange={onChange}
 				/>
-				<input
-					type='submit'
-					value='Search'
-					className='btn btn-dark-special btn-block'
-				/>
-				{githubContext.users.length > 0 && (
-					<div className='clear'>
+				<div className='btn-wrapper'>
+					<input
+						type='submit'
+						value='Search'
+						className='btn btn-dark-special btn-block'
+					/>
+					{githubContext.users.length > 0 && (
 						<button
-							className='btn btn-light btn-block'
+							className='btn btn-light-special btn-block'
 							onClick={githubContext.clearUsers}
 						>
 							Clear
 						</button>
-					</div>
-				)}
+					)}
+				</div>
 			</form>
 		</div>
 	);
