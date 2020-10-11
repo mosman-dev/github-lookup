@@ -320,6 +320,13 @@ img {
 	border-radius: 50%;
 }
 
+/* User Style */
+.user-style {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
 /* Forms */
 .form {
 	display: flex;
@@ -449,5 +456,10 @@ table th {
 	.navbar ul {
 		text-align: center;
 		justify-content: center;
+	}
+
+	/* User Style */
+	.user-style {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
